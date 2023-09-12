@@ -5,7 +5,7 @@
   let maxAmount = 200;
   let arr = [];
   async function fetchData(){
-    let response = await fetch("/data.json");
+    let response = await fetch("data.json");
     let data = await response.json()
     console.log(data);
     mainChart[2].style.backgroundColor = `hsl(186, 34%, 60%)`;
